@@ -3,7 +3,6 @@ export CUDA_VISIBLE_DEVICES=1
 data_path=traffic.csv
 random_seed=2025
 
-
 python -u run_for_L3former.py \
   --random_seed $random_seed \
   --model_id traffic_96_96 \
@@ -20,7 +19,7 @@ python -u run_for_L3former.py \
   --train_epochs 20 \
   --patience 5 \
   --batch_size 16 \
-  --window_size_list 3,7,15,27,43 \
+  --window_size_list 3,7,15,27,43 \    # or 3,7,15
   --learning_rate 0.001 \
   --lradj 'TST' \
   --init_residual_weight_list 2.0,1.0,1.0 \
@@ -45,7 +44,7 @@ python -u run_for_L3former.py \
   --train_epochs 20 \
   --patience 5 \
   --batch_size 16 \
-  --window_size_list 3,7,15,27,43 \
+  --window_size_list 3,7,15,27,43 \    # or 3,7,15
   --learning_rate 0.001 \
   --lradj 'TST' \
   --init_residual_weight_list 2.0,1.0,1.0 \
@@ -70,7 +69,7 @@ python -u run_for_L3former.py \
   --train_epochs 20 \
   --patience 5 \
   --batch_size 16 \
-  --window_size_list 3,7,15,27,43 \
+  --window_size_list 3,7,15,27,43 \    # or 3,7,15
   --learning_rate 0.001 \
   --lradj 'TST' \
   --init_residual_weight_list 2.0,1.0,1.0 \
@@ -95,7 +94,7 @@ python -u run_for_L3former.py \
   --train_epochs 20 \
   --patience 5 \
   --batch_size 16 \
-  --window_size_list 3,7,15,27,43 \
+  --window_size_list 3,7,15,27,43 \    # or 3,7,15
   --learning_rate 0.001 \
   --lradj 'TST' \
   --init_residual_weight_list 2.0,1.0,1.0 \
