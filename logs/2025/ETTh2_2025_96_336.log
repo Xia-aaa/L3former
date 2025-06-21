@@ -1,0 +1,52 @@
+Args in experiment:
+Namespace(activation='gelu', affine=1, batch_size=128, checkpoints='./checkpoints/', d_model=128, d_twff=128, d_vwff=14, data='ETTh2', data_path='ETTh2.csv', des='Exp', devices='0,1,2,3', do_predict=False, dropout=0.1, e_layers=1, embed='timeF', enc_in=7, features='M', flatten_mod=1, freq='h', gpu=0, head_dropout=0.1, init_residual_weight_list=[1.0, 1.0, 1.0], inverse=False, is_training=1, itr=1, label_len=0, learning_rate=0.0005, loss='MSE', lradj='type1', mask=0, mod=0, model='L3former', model_id='ETTh2_96_336', n_heads=8, num_workers=10, output_attention=False, patience=10, pct_start=0.2, pred_len=336, random_seed=2025, revin=1, root_path='./dataset/ETT-small/', seq_len=96, target='OT', train_epochs=10, train_residual_weight=1, use_L3Linear=0, use_amp=False, use_gpu=True, use_multi_gpu=False, use_norm_in_former=1, use_pooling_init=1, use_scheduler=1, use_std_in_revin=1, use_vwff=1, vwff_dropout=0.8, window_size_list=[3, 7, 15, 27])
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_96_336_L3former_ETTh2_M_ft96_sl0_ll336_pl128_dm8_nh1_el128_dftimeF_ebExp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8209
+val 2545
+test 2545
+Epoch: 1 cost time: 1.152207374572754
+Epoch: 1, Steps: 64 | Train Loss: 0.8529986 Vali Loss: 0.4195345 Test Loss: 0.4810170
+Validation loss decreased (inf --> 0.419534).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 2 cost time: 0.8520820140838623
+Epoch: 2, Steps: 64 | Train Loss: 0.7347879 Vali Loss: 0.3748968 Test Loss: 0.4252293
+Validation loss decreased (0.419534 --> 0.374897).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 0.9904007911682129
+Epoch: 3, Steps: 64 | Train Loss: 0.6797977 Vali Loss: 0.3643924 Test Loss: 0.4194922
+Validation loss decreased (0.374897 --> 0.364392).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 4 cost time: 0.9616494178771973
+Epoch: 4, Steps: 64 | Train Loss: 0.6682703 Vali Loss: 0.3625048 Test Loss: 0.4184514
+Validation loss decreased (0.364392 --> 0.362505).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 5 cost time: 1.0125973224639893
+Epoch: 5, Steps: 64 | Train Loss: 0.6602101 Vali Loss: 0.3611239 Test Loss: 0.4199652
+Validation loss decreased (0.362505 --> 0.361124).  Saving model ...
+Updating learning rate to 3.125e-05
+Epoch: 6 cost time: 1.020315170288086
+Epoch: 6, Steps: 64 | Train Loss: 0.6571769 Vali Loss: 0.3642783 Test Loss: 0.4177648
+EarlyStopping counter: 1 out of 10
+Updating learning rate to 1.5625e-05
+Epoch: 7 cost time: 0.9237298965454102
+Epoch: 7, Steps: 64 | Train Loss: 0.6546029 Vali Loss: 0.3617705 Test Loss: 0.4178911
+EarlyStopping counter: 2 out of 10
+Updating learning rate to 7.8125e-06
+Epoch: 8 cost time: 0.9415638446807861
+Epoch: 8, Steps: 64 | Train Loss: 0.6540889 Vali Loss: 0.3621055 Test Loss: 0.4180777
+EarlyStopping counter: 3 out of 10
+Updating learning rate to 3.90625e-06
+Epoch: 9 cost time: 0.9281735420227051
+Epoch: 9, Steps: 64 | Train Loss: 0.6556339 Vali Loss: 0.3644150 Test Loss: 0.4181343
+EarlyStopping counter: 4 out of 10
+Updating learning rate to 1.953125e-06
+Epoch: 10 cost time: 0.9198133945465088
+Epoch: 10, Steps: 64 | Train Loss: 0.6547041 Vali Loss: 0.3605665 Test Loss: 0.4181221
+Validation loss decreased (0.361124 --> 0.360566).  Saving model ...
+Updating learning rate to 9.765625e-07
+>>>>>>>testing : ETTh2_96_336_L3former_ETTh2_M_ft96_sl0_ll336_pl128_dm8_nh1_el128_dftimeF_ebExp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+test shape: (2545, 336, 7) (2545, 336, 7)
+test shape: (2545, 336, 7) (2545, 336, 7)
+mse:0.4139310419559479, mae:0.42925408482551575

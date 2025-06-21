@@ -1,0 +1,52 @@
+Args in experiment:
+Namespace(activation='gelu', affine=0, batch_size=128, checkpoints='./checkpoints/', d_model=512, d_twff=512, d_vwff=128, data='ETTh1', data_path='ETTh1.csv', des='Exp', devices='0,1,2,3', do_predict=False, dropout=0.1, e_layers=1, embed='timeF', enc_in=7, features='M', flatten_mod=1, freq='h', gpu=0, head_dropout=0.1, init_residual_weight_list=[0.5, 0.5, 1.0], inverse=False, is_training=1, itr=1, label_len=0, learning_rate=0.001, loss='MSE', lradj='type1', mask=0, mod=0, model='L3former', model_id='ETTh1_96_192', n_heads=8, num_workers=10, output_attention=False, patience=10, pct_start=0.2, pred_len=192, random_seed=2025, revin=1, root_path='./dataset/ETT-small/', seq_len=96, target='OT', train_epochs=10, train_residual_weight=1, use_L3Linear=0, use_amp=False, use_gpu=True, use_multi_gpu=False, use_norm_in_former=1, use_pooling_init=0, use_scheduler=1, use_std_in_revin=1, use_vwff=1, vwff_dropout=0.8, window_size_list=[3, 7, 15, 27])
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_96_192_L3former_ETTh1_M_ft96_sl0_ll192_pl512_dm8_nh1_el512_dftimeF_ebExp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2689
+test 2689
+Epoch: 1 cost time: 1.1356744766235352
+Epoch: 1, Steps: 65 | Train Loss: 0.7243006 Vali Loss: 1.0547979 Test Loss: 0.4806933
+Validation loss decreased (inf --> 1.054798).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 0.992161750793457
+Epoch: 2, Steps: 65 | Train Loss: 0.5077943 Vali Loss: 1.0274030 Test Loss: 0.4477848
+Validation loss decreased (1.054798 --> 1.027403).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3 cost time: 0.9881770610809326
+Epoch: 3, Steps: 65 | Train Loss: 0.4471557 Vali Loss: 0.9943125 Test Loss: 0.4321728
+Validation loss decreased (1.027403 --> 0.994313).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4 cost time: 0.9179468154907227
+Epoch: 4, Steps: 65 | Train Loss: 0.4362244 Vali Loss: 0.9875966 Test Loss: 0.4231323
+Validation loss decreased (0.994313 --> 0.987597).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 0.9338977336883545
+Epoch: 5, Steps: 65 | Train Loss: 0.4305271 Vali Loss: 0.9826783 Test Loss: 0.4242096
+Validation loss decreased (0.987597 --> 0.982678).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 6 cost time: 0.8897156715393066
+Epoch: 6, Steps: 65 | Train Loss: 0.4279771 Vali Loss: 0.9830079 Test Loss: 0.4237961
+EarlyStopping counter: 1 out of 10
+Updating learning rate to 3.125e-05
+Epoch: 7 cost time: 0.9675073623657227
+Epoch: 7, Steps: 65 | Train Loss: 0.4264631 Vali Loss: 0.9852903 Test Loss: 0.4239180
+EarlyStopping counter: 2 out of 10
+Updating learning rate to 1.5625e-05
+Epoch: 8 cost time: 0.9922142028808594
+Epoch: 8, Steps: 65 | Train Loss: 0.4257486 Vali Loss: 0.9840495 Test Loss: 0.4232141
+EarlyStopping counter: 3 out of 10
+Updating learning rate to 7.8125e-06
+Epoch: 9 cost time: 0.9349794387817383
+Epoch: 9, Steps: 65 | Train Loss: 0.4255339 Vali Loss: 0.9841678 Test Loss: 0.4233949
+EarlyStopping counter: 4 out of 10
+Updating learning rate to 3.90625e-06
+Epoch: 10 cost time: 0.8602039813995361
+Epoch: 10, Steps: 65 | Train Loss: 0.4249679 Vali Loss: 0.9839849 Test Loss: 0.4234510
+EarlyStopping counter: 5 out of 10
+Updating learning rate to 1.953125e-06
+>>>>>>>testing : ETTh1_96_192_L3former_ETTh1_M_ft96_sl0_ll192_pl512_dm8_nh1_el512_dftimeF_ebExp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+test shape: (2689, 192, 7) (2689, 192, 7)
+test shape: (2689, 192, 7) (2689, 192, 7)
+mse:0.421322226524353, mae:0.42043647170066833
