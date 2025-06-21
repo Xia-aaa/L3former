@@ -33,11 +33,6 @@ class Model(nn.Module):
                                                           mod=configs.mod,
                                                           use_pooling_init=configs.use_pooling_init)
 
-        # # 1D Convolution based multiscale extractor
-        # self.multiscale_conv_extractor = MultiScaleConvExtractor(window_size_list=configs.window_size_list,
-        #                                                          in_channels=self.n_vars,
-        #                                                          dropout=configs.dropout)
-
         # Enhanced Transformer layers
         self.layers = nn.ModuleList([
             EnhancedTransformerLayer(
@@ -76,7 +71,6 @@ class Model(nn.Module):
 
         # L3 based multiscale extractor (B, C, L, G)
         x_stack = self.multiscale_extractor(x)
-        # x_stack = self.multiscale_conv_extractor(x)
 
         # Scale-shared series-wise embedding (B*C, G, D)
         emb = self.embedding(x_stack)
