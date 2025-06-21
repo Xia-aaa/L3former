@@ -19,7 +19,7 @@ def data_provider(args, flag):
 
     if flag == 'test':
         shuffle_flag = False
-        drop_last = False
+        drop_last = False   # To ensure fairness
         # batch_size = 1  # bsz=1 for evaluation
         batch_size = args.batch_size  # bsz=1 for evaluation
         freq = args.freq
