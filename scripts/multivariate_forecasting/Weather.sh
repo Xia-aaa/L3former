@@ -3,7 +3,6 @@ export CUDA_VISIBLE_DEVICES=1
 data_path=weather.csv
 random_seed=2025
 
-
 python -u run_for_L3former.py \
   --random_seed $random_seed \
   --model_id weather_96_96 \
