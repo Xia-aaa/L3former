@@ -3,7 +3,6 @@ export CUDA_VISIBLE_DEVICES=1
 data_path=ETTh1.csv
 random_seed=2025
 
-
 python -u run_for_L3former.py \
   --random_seed $random_seed \
   --model_id ETTh1_96_96 \
@@ -65,8 +64,7 @@ python -u run_for_L3former.py \
   --vwff_dropout 0.5 \
   --init_residual_weight_list 0.5,0.5,1.0 \
   --use_scheduler 1 \
-  --e_layers 1
-#  --e_layers 1  >logs/ETTh1_${random_seed}_96_336.log
+  --e_layers 1  >logs/ETTh1_${random_seed}_96_336.log
 #  --e_layers 1
 
 python -u run_for_L3former.py \
@@ -88,8 +86,7 @@ python -u run_for_L3former.py \
   --vwff_dropout 0.5 \
   --init_residual_weight_list 0.5,0.5,1.0 \
   --use_scheduler 1 \
-  --e_layers 1
-#  --e_layers 1  >logs/ETTh1_${random_seed}_96_720.log
+  --e_layers 1  >logs/ETTh1_${random_seed}_96_720.log
 #  --e_layers 1
 
 
