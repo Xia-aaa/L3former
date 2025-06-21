@@ -72,7 +72,7 @@ python -u run_for_L3former.py \
   --enc_in 321 \
   --d_model 512 \
   --d_twff 512 \
-  --d_vwff 512 \
+  --d_vwff 512 \   # or d_vwff 128,256
   --window_size_list 3,7 \
   --learning_rate 0.001 \
   --dropout 0.2 \
