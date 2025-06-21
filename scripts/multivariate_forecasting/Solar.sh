@@ -1,10 +1,7 @@
 export CUDA_VISIBLE_DEVICES=1
 
-
-# scheduler
 data_path=solar_AL.txt
 random_seed=2025
-
 
 python -u run_for_L3former.py \
   --random_seed $random_seed \
@@ -19,8 +16,6 @@ python -u run_for_L3former.py \
   --d_model 256 \
   --d_twff 256 \
   --d_vwff 64 \
-  --patience 5 \
-  --batch_size 32 \
   --window_size_list 3,7,15,27,43 \
   --learning_rate 0.0005 \
   --use_std_in_revin 0 \
@@ -42,8 +37,6 @@ python -u run_for_L3former.py \
   --d_model 256 \
   --d_twff 256 \
   --d_vwff 64 \
-  --patience 5 \
-  --batch_size 32 \
   --window_size_list 3,7,15,27,43 \
   --learning_rate 0.0005 \
   --use_std_in_revin 0 \
@@ -65,8 +58,6 @@ python -u run_for_L3former.py \
   --d_model 256 \
   --d_twff 256 \
   --d_vwff 64 \
-  --patience 5 \
-  --batch_size 32 \
   --window_size_list 3,7,15 \
   --learning_rate 0.0005 \
   --use_std_in_revin 0 \
@@ -88,8 +79,6 @@ python -u run_for_L3former.py \
   --d_model 256 \
   --d_twff 256 \
   --d_vwff 64 \
-  --patience 5 \
-  --batch_size 32 \
   --window_size_list 3,7,15 \
   --learning_rate 0.0005 \
   --use_std_in_revin 0 \
