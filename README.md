@@ -125,8 +125,6 @@ L³former demonstrates significantly lower GPU memory usage and faster computati
 ### 6️⃣ Other experiements
 Comprehensive experiments were conducted. For additional details, please refer to the original paper.
 
-## 🧩 Getting Started
-
 ## 🚂 Getting Started
 
 ### Installation
