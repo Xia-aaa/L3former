@@ -97,7 +97,7 @@ Table 2 in our paper:
 L³former achieves significant improvements in long-term forecasting across nine benchmark datasets, outperforming state-of-the-art models (in Fig.1) by **5.8%–16.7%**  averaged over all datasets in MSE.
 - **Large-Scale Datasets**： On **Solar-Energy**, L³former reduces MSE by **11.1%** compared to the best baseline; on **ECL**, it lowers MSE by **7.9%**. On **Traffic**, while MSE is slightly higher than iTransformer, MAE remains comparable. 
 -  **Other Datasets**：On **Weather**, L³former improves MSE by **2.6%–4.1%**, and on **ETTm** datasets, it surpasses all baselines, including linear-based models like TimeMixer. 
--  **Ultra-long-term forecasting **：In 720-step prediction, L³former demonstrates robust performance: it reduces MSE by **13.5% (ECL)**, **11.8% (Solar-Energy)**, and **26.3% (Exchange)**，
+-  **Ultra-long-term forecasting**：In 720-step prediction, L³former demonstrates robust performance: it reduces MSE by **13.5% (ECL)**, **11.8% (Solar-Energy)**, and **26.3% (Exchange)**，
 ### 2️⃣ Ablation
 Table 8 in our paper
 ### 3️⃣ Local Linear Layer (L³)
