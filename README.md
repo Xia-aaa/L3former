@@ -145,7 +145,7 @@ bash scripts/multivariate_forecasting/ECL.sh
 # for example: ETTh1
 bash scripts/multivariate_forecasting/ETTh1.sh
 ```
-The you can cheak the results in "./logs". Moreover, we have provided the complete training logs in "./logs/2025".
+Then you can cheak the results in "./logs". Moreover, we have provided the complete training logs in "./logs/2025".
 
 ## 🙏 Acknowledgements
 
