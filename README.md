@@ -20,8 +20,8 @@ Official implementation of the paper:
 
 ## 🚀 News
 
--   ​**​2025.06​**​ L3former is officially online and release full code of main results.
--   ​**​2025.05​**​ L3former is completely accepted by **Information Fusion**.
+-   ​**​2025.06​**​ L³former is officially online and release full code of main results.
+-   ​**​2025.05​**​ L³former is completely accepted by **Information Fusion**.
 
 ## 🔍Key Features
 
