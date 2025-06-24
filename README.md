@@ -129,6 +129,7 @@ Comprehensive experiments were conducted. For additional details, please refer t
 
 ### Installation
 ```bash
+cd L3former-main
 pip install -r requirements.txt
 ```
 
@@ -139,7 +140,6 @@ The datasets can be obtained from  [Google Drive](https://drive.google.com/file/
 
 Run benchmark experiments:
 ```bash
-cd L3former-main
 # for example: ECL
 bash scripts/multivariate_forecasting/ECL.sh
 # for example: ETTh1
