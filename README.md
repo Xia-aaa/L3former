@@ -6,15 +6,16 @@ Official implementation of the paper:
 
 ## 📜 Citation
 ```bash
-@article{xia2025L³former,
-  title  = {L³former: Enhanced Multi-Scale Shared Transformer with Local Linear Layer for Long-term Series Forecasting},
-  author = {Yulin Xia and Chang Wu and Xiaoman Yang},
-  journal= {Information Fusion},
-  volume = {103398},
-  year   = {2025},
-  doi    = {10.1016/j.inffus.2025.103398},
-  note   = {Available online: 20 June 2025},
-  url    = {https://doi.org/10.1016/j.inffus.2025.103398}
+@article{XIA2025103398,
+title = {L3former: Enhanced multi-scale shared Transformer with Local Linear Layer for long-term series forecasting},
+journal = {Information Fusion},
+volume = {124},
+pages = {103398},
+year = {2025},
+issn = {1566-2535},
+doi = {https://doi.org/10.1016/j.inffus.2025.103398},
+url = {https://www.sciencedirect.com/science/article/pii/S1566253525004713},
+author = {Yulin Xia and Chang Wu and Xiaoman Yang}
 }
 ```
 
